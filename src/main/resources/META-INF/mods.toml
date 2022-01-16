@@ -1,0 +1,31 @@
+
+modLoader="javafml"
+loaderVersion="[39,)"
+license="All rights reserved"
+
+[[mods]]
+modId="testmod"
+version="${file.jarVersion}"
+displayName="Ricy Test Mod"
+logoFile="examplemod.png"
+credits="Made by Ricy40"
+authors="Ricy40"
+description='''
+Ricy's test mod or something.
+
+IDRK
+'''
+
+[[dependencies.testmod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[39,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.testmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.1,1.19)"
+    ordering="NONE"
+    side="BOTH"
