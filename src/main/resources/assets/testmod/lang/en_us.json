@@ -1,0 +1,10 @@
+{
+  "item.testmod.nixium_ingot" : "Nixium Ingot",
+  "item.testmod.nixium_nugget" : "Nixium Nugget",
+  "item.testmod.nixium_raw" : "Raw Nixium",
+
+  "block.testmod.nixium_block" : "Nixium Block",
+  "block.testmod.nixium_ore" : "Nixium Ore",
+  "block.testmod.nixium_block_raw" : "Raw Nixium Block",
+  "block.testmod.nixium_ore_deepslate" : "Nixium Deepslate Ore"
+}
