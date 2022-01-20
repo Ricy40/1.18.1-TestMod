@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "testmod:nixium_ore",
+    "testmod:nixium_ore_deepslate",
+    "testmod:nixium_block",
+    "testmod:nixium_block_raw"
+  ]
+}

@@ -1,6 +1,7 @@
 package com.ricy40.testmod.block;
 
 import com.ricy40.testmod.TestMod;
+import com.ricy40.testmod.item.ModCreativeModeTab;
 import com.ricy40.testmod.item.ModItems;
 import net.minecraft.world.entity.ai.behavior.Behavior;
 import net.minecraft.world.item.BlockItem;
@@ -23,19 +24,19 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> NIXIUM_BLOCK = registerBlock("nixium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.TEST_TAB);
 
     public static final RegistryObject<Block> NIXIUM_ORE = registerBlock("nixium_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(4f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.TEST_TAB);
 
     public static final RegistryObject<Block> NIXIUM_BLOCK_RAW = registerBlock("nixium_block_raw",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.TEST_TAB);
 
     public static final RegistryObject<Block> NIXIUM_ORE_DEEPSLATE = registerBlock("nixium_ore_deepslate",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(4f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.TEST_TAB);
 
     // Metnixium_block_2.pnghods
 
