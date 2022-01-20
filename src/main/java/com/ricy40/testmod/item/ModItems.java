@@ -13,16 +13,23 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TestMod.MOD_ID);
 
     public static final RegistryObject<Item> NIXIUM_INGOT = ITEMS.register("nixium_ingot",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_TAB).fireResistant().rarity(Rarity.RARE)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_TAB).rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> NIXIUM_NUGGET = ITEMS.register("nixium_nugget",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_TAB).fireResistant().rarity(Rarity.RARE)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_TAB).rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> NIXIUM_RAW = ITEMS.register("nixium_raw",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_TAB).fireResistant().rarity(Rarity.RARE)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_TAB).rarity(Rarity.RARE)));
 
+    public static final RegistryObject<Item> NIX_STICK = ITEMS.register("nix_stick",
+            () -> new NixStickItem(new Item.Properties().tab(ModCreativeModeTab.TEST_TAB).rarity(Rarity.RARE).durability(3).stacksTo(1)));
+
+    public static final RegistryObject<Item> NIX_STICK_EMPTY = ITEMS.register("nix_stick_empty",
+            () -> new NixStickEmptyItem(new Item.Properties().tab(ModCreativeModeTab.TEST_TAB).rarity(Rarity.RARE).stacksTo(1)));
+    
+    
     public static final RegistryObject<Item> DICK = ITEMS.register("dick",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_TAB).fireResistant().rarity(Rarity.RARE)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
